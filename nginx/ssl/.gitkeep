@@ -1,0 +1,3 @@
+# SSL Certificates Directory
+# Generate certificates using: make ssl
+# Or run: ./scripts/generate-ssl.sh

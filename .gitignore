@@ -1,0 +1,82 @@
+# ===========================================
+# Git Ignore
+# ===========================================
+
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build outputs
+build/
+dist/
+*.tgz
+
+# Environment files with secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+!.env.development
+!.env.production
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+.nyc_output/
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.tar
+
+# SSL Certificates (don't commit real certs)
+nginx/ssl/*.pem
+nginx/ssl/*.key
+nginx/ssl/*.crt
+!nginx/ssl/.gitkeep
+
+# Database data (use volumes instead)
+database/data/
+postgres-data/
+redis-data/
+
+# Backup files
+backup/data/
+*.sql.gz
+*.dump
+
+# Test
+.coverage
+htmlcov/
+
+# Misc
+*.bak
+*.tmp
+*.temp
+
