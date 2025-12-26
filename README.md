@@ -391,5 +391,6 @@ docker inspect --format='{{.State.Health.Status}}' backend-api
 MIT License - Feel free to use this for your projects!
 
 ---
+App:- multi-service-docker-app-xorism.up.railway.app
 
-Built with ❤️ using Docker, Node.js, React, PostgreSQL, Redis, and more.
+Built with Docker, Node.js, React, PostgreSQL, Redis, and more.
