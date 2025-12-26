@@ -167,16 +167,6 @@ cp .env.development .env
 docker-compose -f docker-compose.dev.yml up --build
 ```
 
-**Development URLs:**
-| Service | URL |
-|---------|-----|
-| Frontend | http://localhost:3000 |
-| Backend API | http://localhost:3001 |
-| API Docs | http://localhost:3001/api/docs |
-| pgAdmin | http://localhost:5050 |
-| Redis Commander | http://localhost:8081 |
-| Mailhog | http://localhost:8025 |
-
 ### Production Mode
 
 ```bash
