@@ -1,4 +1,4 @@
-# 🐳 Multi-Service Docker Application
+#  Multi-Service Docker Application
 
 A **production-ready**, enterprise-grade multi-service Docker implementation featuring microservices architecture with comprehensive monitoring, logging, security, and DevOps best practices.
 
@@ -11,7 +11,7 @@ A **production-ready**, enterprise-grade multi-service Docker implementation fea
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
                               ┌─────────────────────────────────────┐
@@ -38,9 +38,9 @@ A **production-ready**, enterprise-grade multi-service Docker implementation fea
           └───────────────────┘  └─────────────────┘  └───────────────────┘
 ```
 
-## ✨ Features
+##  Features
 
-### 🔐 Security
+###  Security
 - **SSL/TLS Support** - HTTPS with modern cipher suites
 - **Rate Limiting** - API and connection rate limiting
 - **Security Headers** - HSTS, CSP, X-Frame-Options, etc.
@@ -49,7 +49,7 @@ A **production-ready**, enterprise-grade multi-service Docker implementation fea
 - **Input Validation** - Request validation with express-validator
 - **HTTP Parameter Pollution Protection** - HPP middleware
 
-### 📊 Monitoring & Observability
+###  Monitoring & Observability
 - **Prometheus** - Metrics collection and alerting
 - **Grafana** - Beautiful dashboards and visualization
 - **Loki + Promtail** - Centralized log aggregation
@@ -59,7 +59,7 @@ A **production-ready**, enterprise-grade multi-service Docker implementation fea
 - **Redis Exporter** - Cache metrics
 - **Custom API Metrics** - Request rate, latency, error rate
 
-### 🚀 Performance
+###  Performance
 - **Multi-stage Docker Builds** - Minimal production images
 - **Redis Caching** - Reduced database load
 - **Gzip Compression** - Smaller response sizes
@@ -67,7 +67,7 @@ A **production-ready**, enterprise-grade multi-service Docker implementation fea
 - **Static Asset Caching** - Browser caching with immutable headers
 - **Alpine Images** - 5x smaller footprint
 
-### 🛠️ Developer Experience
+###  Developer Experience
 - **Hot Reload** - Instant code updates in development
 - **Swagger API Docs** - Interactive API documentation
 - **pgAdmin** - PostgreSQL management UI
@@ -76,13 +76,13 @@ A **production-ready**, enterprise-grade multi-service Docker implementation fea
 - **Makefile** - Simple commands for common tasks
 - **Winston Logging** - Structured logging with levels
 
-### 💾 Data Management
+###  Data Management
 - **Automated Backups** - Scheduled PostgreSQL backups
 - **Backup Retention** - Configurable retention policy
 - **Data Persistence** - Named volumes for all data
 - **Health Checks** - Automatic container health monitoring
 
-### 🔄 DevOps
+###  DevOps
 - **CI/CD Pipeline** - GitHub Actions workflow
 - **Docker Compose Profiles** - Modular service activation
 - **Environment Configs** - Separate dev/prod configurations
@@ -149,7 +149,7 @@ dockerproject01/
         └── 📄 ci-cd.yml
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Docker Engine 20.10+
@@ -193,7 +193,7 @@ make full
 | Grafana | http://localhost:3001 |
 | pgAdmin | http://localhost:5050 |
 
-## 📋 API Documentation
+## API Documentation
 
 ### Endpoints
 
@@ -226,7 +226,7 @@ make full
 }
 ```
 
-## 🔧 Make Commands
+##  Make Commands
 
 ```bash
 # Development
@@ -267,7 +267,7 @@ make redis-shell      # Redis CLI
 make health           # Check service health
 ```
 
-## 🌐 Docker Compose Profiles
+##  Docker Compose Profiles
 
 | Profile | Services | Use Case |
 |---------|----------|----------|
@@ -282,7 +282,7 @@ docker-compose -f docker-compose.prod.yml --profile monitoring up -d
 docker-compose -f docker-compose.prod.yml --profile admin --profile monitoring up -d
 ```
 
-## 🔒 SSL/HTTPS Setup
+##  SSL/HTTPS Setup
 
 ```bash
 # Generate self-signed certificates (development)
@@ -295,7 +295,7 @@ make ssl
 # 4. Copy certificates to nginx/ssl/
 ```
 
-## 📊 Monitoring Dashboard
+##  Monitoring Dashboard
 
 Access Grafana at http://localhost:3001
 
@@ -308,7 +308,7 @@ Pre-configured dashboards include:
 - Database Metrics
 - Redis Metrics
 
-## 💾 Backup & Restore
+##  Backup & Restore
 
 ```bash
 # Create backup
@@ -321,7 +321,7 @@ ls -la backup/data/
 make restore BACKUP_FILE=backup_20251226_120000.sql.gz
 ```
 
-## 🚢 CI/CD Pipeline
+##  CI/CD Pipeline
 
 The GitHub Actions workflow includes:
 
@@ -331,7 +331,7 @@ The GitHub Actions workflow includes:
 4. **Deploy Staging** - Auto-deploy on develop branch
 5. **Deploy Production** - Deploy on release
 
-## 📈 Scaling
+##  Scaling
 
 ```bash
 # Scale backend service
@@ -340,7 +340,7 @@ docker-compose -f docker-compose.prod.yml up -d --scale backend=3
 
 > Update nginx upstream configuration for load balancing when scaling.
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### View logs
 ```bash
@@ -368,7 +368,7 @@ docker-compose ps
 docker inspect --format='{{.State.Health.Status}}' backend-api
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -376,7 +376,7 @@ docker inspect --format='{{.State.Health.Status}}' backend-api
 4. Run tests: `make test`
 5. Submit a pull request
 
-## 📄 License
+##  License
 
 MIT License - Feel free to use this for your projects!
 
